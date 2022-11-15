@@ -1,0 +1,120 @@
+@import 'colors';
+
+.el-form-white { 
+    .padding-button {
+      bottom: 37px;
+    }
+  
+    .padding-right {
+      right: 80px;
+      bottom: 13px;
+    }
+  .el-form-item {
+    margin-bottom: 28px;
+    display: flex;
+    .el-form-item__content {
+      width: 100%;
+      margin: 0 !important;
+    }
+    .el-form-item__label {
+      flex-grow: 0;
+      flex-shrink: 0;
+      line-height: 3;
+      color: inherit !important;
+    }
+  }
+
+  .el-checkbox__label {
+    color: $color-white !important;
+  }
+
+  .el-form-item {
+    input[type='text'],
+    input[type='password'] {
+      background-color: transparent;
+      color: $color-black;
+
+      &::placeholder {
+        color: rgba($color-white, 0.3);
+      }
+
+      &:hover {
+        &::placeholder {
+          color: rgba($color-white, 0.4);
+        }
+      }
+    }
+
+    &:not(.is-error) {
+      input[type='text'],
+      input[type='password'] {
+        background-color: transparent;
+        border: 1px solid rgba($color-white, 0.3);
+
+        &:hover {
+          border: 1px solid rgba($color-white, 0.4);
+        }
+
+        &:focus {
+          border: 1px solid rgba($color-white, 1);
+        }
+      }
+    }
+  }
+}
+
+.el-pagination__jump {
+  float: right;
+  margin-right: 20px;
+}
+
+.buttons-custom-1 {
+  border: 0;
+  display: block;
+  float: left;
+
+  &.selected {
+    background-color: $color-gray-1;
+  }
+}
+
+.full-modal {
+  .modal-dialog {
+    max-width: calc(100% - 80px);
+    width: calc(100% - 80px);
+  }
+}
+
+//scss templates
+%flex-center {
+  display: flex;
+  align-items: center;
+}
+%transition-0 {
+  transition: 1s all ease-in-out;
+}
+%transition-1 {
+  transition: 0.5s all ease-in-out;
+}
+%transition-2 {
+  transition: 0.3s all ease-in-out;
+}
+%transition-3 {
+  transition: 0.2s all ease-in-out;
+}
+%transition-4 {
+  transition: 0.1s all ease-in-out;
+}
+
+%box-shadow {
+  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.05), 2px 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+$left-menu-size: 266px;
+$font-awesome: 'Font Awesome 5 Pro';
+
+.element-input {
+  display: inline-flex !important;
+  width: 100%;
+  align-items: baseline !important;
+}
